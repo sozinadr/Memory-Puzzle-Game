@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="layout.css" />
+    <title>Memory Squence Puzzle</title>
+    <link rel="icon" href="logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>AUIS SEQUENCE MEMORY PUZZLE</h1>
+        <div class="Menu">
+            <div class="frame">
+                <button class="StartBtn custom-btn btn-6" id="startBtn">Start</button>
+            </div>
+
+            <div class="levels" id="turn"></div>
+        </div>
+        <div class="main-content-container">
+            <div class="row firstRow">
+                <button class="container container0">
+            <img
+              class="img"
+              id="img1"
+              src="logo.png"
+              width="120"
+              height="120"
+            />
+          </button>
+                <button class="container container1">
+            <img id="img2" src="logo.png" width="120" height="120" />
+          </button>
+                <button class="container container2">
+            <img id="img3" src="logo.png" width="120" height="120" />
+          </button>
+            </div>
+
+            <div class="row SecondRow">
+                <button class="container container3">
+            <img id="img4" src="logo.png" width="120" height="120" />
+          </button>
+                <button class="container container4">
+            <img id="img5" src="logo.png" width="120" height="120" />
+          </button>
+                <button class="container container5">
+            <img id="img6" src="logo.png" width="120" height="120" />
+          </button>
+            </div>
+
+            <div class="row thirdRow">
+                <button class="container container6">
+            <img id="img7" src="logo.png" width="120" height="120" />
+          </button>
+                <button class="container container7">
+            <img id="img8" src="logo.png" width="120" height="120" />
+          </button>
+                <button class="container container8">
+            <img id="img9" src="logo.png" width="120" height="120" />
+          </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="leaderboard-container">
+        <div class="leaderboard">
+            <h1>
+                <svg class="ico-cup">
+            <use xlink:href="#cup"></use>
+          </svg> Leaderboard
+                <!-- </h1>
+            <ol>
+                <li>
+                    <mark>Jerry Wood</mark>
+                    <small>315</small>
+                </li>
+                <li>
+                    <mark>Brandon Barnes</mark>
+                    <small>301</small>
+                </li>
+                <li>
+                    <mark>Raymond Knight</mark>
+                    <small>292</small>
+                </li>
+                <li>
+                    <mark>Trevor McCormick</mark>
+                    <small>245</small>
+                </li>
+                <li>
+                    <mark>Andrew Fox</mark>
+                    <small>203</small>
+                </li>
+            </ol> -->
+
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Name</th>
+                            <th> <span id="down-arrow" Onclick="sortColumn('score')"> <img src="icons8-down-arrow-30.png"></span> Level <span Onclick="sortColumnUp('score')" id="up-arrow"> <img src="icons8-up-arrow-30.png"></span></th>
+
+                        </tr>
+                        <tbody class="tableData">
+
+                        </tbody>
+                    </thead>
+
+                </table>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
